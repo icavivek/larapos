@@ -10,10 +10,10 @@ RUN apt-get update && \
     apt-get install -y libfreetype6-dev libjpeg62-turbo-dev libpng12-dev && \
     docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ && \
     docker-php-ext-install gd
-    
+
 RUN docker-php-ext-install pdo pdo_mysql zip 
 
-RUN composer global require hirak/prestissimo && composer install
+# RUN composer global require hirak/prestissimo && composer install
 EXPOSE 8080
 COPY --from=build /app /var/www/
 COPY docker/000-default.conf /etc/apache2/sites-available/000-default.conf
