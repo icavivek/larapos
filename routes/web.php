@@ -1,5 +1,5 @@
 <?php
-if (App::environment('local')) {
+if (App::environment('production')) {
     URL::forceScheme('https');
 }
 /*
