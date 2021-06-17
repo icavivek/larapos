@@ -5,6 +5,12 @@ COPY . /app
 FROM php:7.3-apache-stretch
 RUN docker-php-ext-install pdo pdo_mysql
 
+RUN docker-php-ext-install mbstring
+
+RUN docker-php-ext-install zip
+
+RUN docker-php-ext-install gd
+
 RUN composer global require hirak/prestissimo && composer install
 
 EXPOSE 8080
