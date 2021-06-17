@@ -7,7 +7,7 @@ RUN docker-php-ext-install pdo pdo_mysql
 
 RUN docker-php-ext-install mbstring
 #install some base extensions
-RUN set -eux; apt-get update; apt-get install -y libzip-dev zlib1g-dev; docker-php-ext-install zip
+RUN apk add --no-cache libzip-dev && docker-php-ext-configure zip --with-libzip=/usr/include && docker-php-ext-install zip
 
 RUN docker-php-ext-install gd
 
