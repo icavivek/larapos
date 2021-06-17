@@ -1,7 +1,6 @@
 FROM composer:1.9.0 as build
 WORKDIR /app
 COPY . /app
-RUN composer global require hirak/prestissimo && composer install
 
 FROM php:7.3-apache-stretch
 RUN apt-get update && apt-get install -y \
@@ -9,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     libzip-dev
 RUN docker-php-ext-install pdo pdo_mysql zip gd
 
+RUN composer global require hirak/prestissimo && composer install
 EXPOSE 8080
 COPY --from=build /app /var/www/
 COPY docker/000-default.conf /etc/apache2/sites-available/000-default.conf
