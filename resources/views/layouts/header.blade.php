@@ -23,18 +23,18 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ $favicon }}">
     <link rel="apple-touch-icon" href="{{ asset('images/logo_apple_touch_icon.png') }}"/>
     
-    <link rel="stylesheet" href="https://laravelpos-xqlb44i2aa-uc.a.run.app/css/font.css">
-    <link rel="stylesheet" href="https://laravelpos-xqlb44i2aa-uc.a.run.app/plugins/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="https://laravelpos-xqlb44i2aa-uc.a.run.app/plugins/datatables/datatables.min.css">
-    <link rel="stylesheet" href="https://laravelpos-xqlb44i2aa-uc.a.run.app/plugins/datatables/dataTables.bootstrap4.min.css"> 
-    <link rel="stylesheet" href="https://laravelpos-xqlb44i2aa-uc.a.run.app/plugins/fontawesome/all.css">
-    <link rel="stylesheet" href="https://laravelpos-xqlb44i2aa-uc.a.run.app/plugins/fontawesome/all.css">
-    <link rel="stylesheet" href="https://laravelpos-xqlb44i2aa-uc.a.run.app/css/nav.css">
-    <link rel="stylesheet" href="https://laravelpos-xqlb44i2aa-uc.a.run.app/css/tables.css">
-    <link rel="stylesheet" href="https://laravelpos-xqlb44i2aa-uc.a.run.app/css/form.css">
-    <link rel="stylesheet" href="https://laravelpos-xqlb44i2aa-uc.a.run.app/css/button.css">
-    <link rel="stylesheet" href="https://laravelpos-xqlb44i2aa-uc.a.run.app/css/labels.css">
-    <link rel="stylesheet" href="https://laravelpos-xqlb44i2aa-uc.a.run.app/css/modal.css">
+    <link rel="stylesheet" href="{{ asset('css/font.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/datatables/datatables.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/datatables/dataTables.bootstrap4.min.css') }}"> 
+    <link rel="stylesheet" href="{{ asset('plugins/fontawesome/all.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/web.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tables.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/form.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/button.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/labels.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/modal.css') }}">
     @stack('styles')
     <title>{{ (config('app.app_title'))?config('app.app_title'):'Appsthing POS' }}</title>
 </head>
