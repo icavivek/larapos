@@ -7,7 +7,7 @@ FROM php:7.3-apache-stretch
 RUN apt-get update && apt-get install -y \
     zlib1g-dev \
     libzip-dev
-RUN docker-php-ext-install pdo pdo_mysql zip
+RUN docker-php-ext-install pdo pdo_mysql zip gd
 
 EXPOSE 8080
 COPY --from=build /app /var/www/
