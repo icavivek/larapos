@@ -21,20 +21,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     
     <link rel="icon" type="image/png" sizes="32x32" href="{{ $favicon }}">
-    <link rel="apple-touch-icon" href="{{ asset('images/logo_apple_touch_icon.png') }}"/>
+    <link rel="apple-touch-icon" href="{{ secure_asset('images/logo_apple_touch_icon.png') }}"/>
     
-    <link rel="stylesheet" href="{{ asset('css/font.css') }}">
-    <link rel="stylesheet" href="{{ asset('plugins/bootstrap/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('plugins/datatables/datatables.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('plugins/datatables/dataTables.bootstrap4.min.css') }}"> 
-    <link rel="stylesheet" href="{{ asset('plugins/fontawesome/all.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/web.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/tables.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/form.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/button.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/labels.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/modal.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/font.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('plugins/bootstrap/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('plugins/datatables/datatables.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('plugins/datatables/dataTables.bootstrap4.min.css') }}"> 
+    <link rel="stylesheet" href="{{ secure_asset('plugins/fontawesome/all.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/web.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/nav.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/tables.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/form.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/button.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/labels.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/modal.css') }}">
     @stack('styles')
     <title>{{ (config('app.app_title'))?config('app.app_title'):'Appsthing POS' }}</title>
 </head>
