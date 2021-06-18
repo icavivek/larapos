@@ -1,9 +1,9 @@
 @extends('layouts.order_layout')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/billing.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/quickpanel.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/labels.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/billing.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/quickpanel.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/labels.css') }}">
 @endpush
 
 @section("content")

@@ -14,7 +14,7 @@
 
 @push('scripts')
     <script src="https://www.paypal.com/sdk/js?client-id={{ $client_id }}&currency={{ $order_currency }}"></script>
-    <script src="{{ asset('plugins/payments/paypal/paypal.js') }}"></script>
+    <script src="{{ secure_asset('plugins/payments/paypal/paypal.js') }}"></script>
     <script>
         'use strict';
 

@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/digital_menu_orders.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/digital_menu_orders.css') }}">
 @endpush
 
 @section("content")

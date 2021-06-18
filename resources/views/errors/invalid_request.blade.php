@@ -1,7 +1,7 @@
-<link rel="stylesheet" href="{{ asset('css/font.css') }}">
-<link rel="stylesheet" href="{{ asset('plugins/bootstrap/bootstrap.min.css') }}">
-<link rel="stylesheet" href="{{ asset('css/web.css') }}">
-<link rel="stylesheet" href="{{ asset('css/labels.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('css/font.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('plugins/bootstrap/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('css/web.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('css/labels.css') }}">
 
         
 <div class="d-flex flex-column error-invalid-page">

@@ -1,7 +1,7 @@
 @extends('layouts.public_layout')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/public_order.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/public_order.css') }}">
 @endpush
 
 @section("content")

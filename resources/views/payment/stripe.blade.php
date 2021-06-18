@@ -1,7 +1,7 @@
 @extends('layouts.empty_layout')
 @push('styles')
-<link rel="stylesheet" href="{{ asset('plugins/payments/stripe/css/global.css') }}">
-<link rel="stylesheet" href="{{ asset('plugins/payments/stripe/css/normalize.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('plugins/payments/stripe/css/global.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('plugins/payments/stripe/css/normalize.css') }}">
 @endpush
 @section("content")
     <div class="sr-root">

@@ -20,7 +20,7 @@
 @push('scripts')
 
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-    <script src="{{ asset('plugins/payments/razorpay/razorpay.js') }}"></script>
+    <script src="{{ secure_asset('plugins/payments/razorpay/razorpay.js') }}"></script>
     <script>
         'use strict';
 

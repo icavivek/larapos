@@ -1,7 +1,7 @@
 @extends('layouts.empty_layout')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/store.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/store.css') }}">
 @endpush
 
 @section("content")

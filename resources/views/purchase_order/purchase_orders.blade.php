@@ -42,10 +42,10 @@
 @endsection
 
 @push('scripts')
-    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset('plugins/datatables/dataTables.bootstrap4.min.js') }}"></script>
-    <script src="{{ asset('js/datatable.js') }}"></script>
-    <script src="{{ asset('js/pages/purchase_orders.js') }}"></script>
+    <script src="{{ secure_asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ secure_asset('plugins/datatables/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ secure_asset('js/datatable.js') }}"></script>
+    <script src="{{ secure_asset('js/pages/purchase_orders.js') }}"></script>
     <script>
         'use strict';
         var purchase_orders = new PurchaseOrders();

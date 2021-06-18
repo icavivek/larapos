@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/multiselect.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/multiselect.css') }}">
 @endpush
 
 @section("content")
