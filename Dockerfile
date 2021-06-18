@@ -15,17 +15,15 @@ RUN apt-get update \
   libxml2-dev \
   unzip \
   zip \
-  libzip-dev \
+  libzip-dev 
 
 
 
-RUN  docker-php-ext-configure gd --with-jpeg-dir=/usr/include/ --with-png-dir=/usr/include/ \
+RUN docker-php-ext-install gd \
+  && docker-php-ext-configure gd --with-jpeg-dir=/usr/include/ --with-png-dir=/usr/include/ \
   && docker-php-ext-install gd \
   && docker-php-ext-install pdo \
   && docker-php-ext-install pdo_mysql
-
-RUN pecl install imagick \
-  && docker-php-ext-enable imagick
 
 EXPOSE 8080
 COPY --from=build /app /var/www/
