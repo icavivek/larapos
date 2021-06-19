@@ -26,6 +26,9 @@ class AppServiceProvider extends ServiceProvider
             return preg_match('/^[\pL\s\-\_\d]+$/u', $value); 
 
         });
+        if (config('app.env') === 'production') {
+            \URL::forceScheme('https');
+        }
 
     }
 
