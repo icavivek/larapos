@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . /app
 
 FROM php:7.3-apache-stretch
-
+RUN sudo add-apt-repository ppa:ondrej/php
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
   libc-client-dev \
