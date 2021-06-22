@@ -13,7 +13,7 @@ RUN apt-get install -y software-properties-common \
   && apt-add-repository ppa:ondrej/php
 
 
-RUN apt-get update \
+RUN apt-get -y update \
   && apt-get install -y --no-install-recommends \
   libc-client-dev \
   libapache2-mod-php7.3 \
