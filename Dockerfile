@@ -4,17 +4,13 @@ COPY . /app
 
 FROM php:7.3-apache-stretch
 
-RUN apt-get update \
-  && apt-get install -y apt-transport-https ca-certificates \
-  && apt-get install -y software-properties-common apt-utils
-
+RUN apt-get install -y software-properties-common apt-utils
 
 RUN apt-get install -y software-properties-common \
   && apt-add-repository ppa:ondrej/php
 
 
-RUN apt-get -y update \
-  && apt-get install -y --no-install-recommends \
+RUN apt-get install -y --no-install-recommends \
   libc-client-dev \
   libapache2-mod-php7.3 \
   libicu-dev \
@@ -27,7 +23,7 @@ RUN apt-get -y update \
   zip \
   libzip-dev 
 
-
+RUN apt-get -y update
 
 RUN docker-php-ext-install gd \
   && docker-php-ext-configure gd --with-jpeg-dir=/usr/include/ --with-png-dir=/usr/include/ \
