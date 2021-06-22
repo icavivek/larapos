@@ -4,8 +4,6 @@ COPY . /app
 
 FROM php:7.3-apache-stretch
 
-RUN apt-get install -y software-properties-common apt-utils
-
 RUN apt-get install -y software-properties-common \
   && apt-add-repository ppa:ondrej/php
 
