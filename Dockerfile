@@ -7,7 +7,7 @@ FROM php:7.3-apache-stretch
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
   libc-client-dev \
-  libapache2-mod-php \
+  libapache2-mod-php7.3 \
   libicu-dev \
   libjpeg62-turbo-dev \
   libkrb5-dev \
