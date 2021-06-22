@@ -6,13 +6,13 @@ FROM php:7.3-apache-stretch
 
 RUN apt-get update \
   && apt-get install -y apt-transport-https ca-certificates \
-  && apt-get install -y language-pack-en-base software-properties-common apt-utils
+  && apt-get install -y software-properties-common apt-utils
 
 
 RUN apt-get install -y software-properties-common \
   && apt-add-repository ppa:ondrej/php
 
-  
+
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
   libc-client-dev \
